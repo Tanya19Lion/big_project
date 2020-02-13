@@ -1,0 +1,135 @@
+@import "_global";
+@import "_vars";
+
+.header_top {
+    background-color: $whiteblue;
+    min-height: 100px;
+    padding: 20px 0;
+}
+.header_top_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo {
+    color: #303031;
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    &_img {
+        margin: 0 5px;
+    }
+    img {
+        display: inline-block;
+    }
+    span {
+        color: $blue;
+    }
+}
+.header_top_inner_btn {
+    button {
+        background-color: $blue;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 20px;
+        padding: 12px 15px;
+        border: none;
+    }
+}
+.header_top_inner_icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 48px;
+    margin-right: 25px;
+    li {
+        display: inline-block;
+    }
+    img {
+        height: 18px;
+        width: 18px;
+        margin-left: 30px;
+    }
+}
+.header_top_inner_person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_top_person {
+    &_img {
+        margin-right: 30px;
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &_name {
+        font-weight: 500;
+        line-height: 20px;
+        color: #333;
+    }
+    &_summ {
+        color: $blue;
+        line-height: 22px;
+        font-size: 15px;
+    }
+}
+    
+.header_menu {
+    background-color: #fff;
+    min-height: 80px;
+    padding: 18px 0;
+    &_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_inner_content {
+        li {
+            display: inline-block;
+            & + li {
+                margin-left: 30px;
+            }
+        }
+        a {
+            font-style: 15px;
+            color: #333;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+    }
+}
+.header_form {
+    max-width: 360px;
+    form {
+        width: 100%;
+        padding-right: 70px;        
+        border: 1px solid #d9dfe5;
+        border-radius: 30px;
+        position: relative;
+    }
+    input {
+        padding: 15px 10px 18px 24px; 
+        border: none;
+        &::placeholder {
+            color: #898f96;
+            font-size: 15px;
+        }
+    }
+    button {
+        position: absolute;
+        border: none;
+        background-color: $blue;
+        padding: 16px 27px;
+        border-radius: 30px;
+        right: 0px;
+        top: 0px;
+    }
+}
